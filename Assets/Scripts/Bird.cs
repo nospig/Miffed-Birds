@@ -25,7 +25,7 @@ public class Bird : MonoBehaviour
             _timeSittingAround += Time.deltaTime;
         }
 
-        if(Mathf.Abs(transform.position.y) > 10 || Mathf.Abs(transform.position.x) > 10 || _timeSittingAround > 3f)
+        if(Mathf.Abs(transform.position.y) > 10 || Mathf.Abs(transform.position.x) > 15 || _timeSittingAround > 3f)
         {
             string currentSceneName = SceneManager.GetActiveScene().name;
             SceneManager.LoadScene(currentSceneName);
