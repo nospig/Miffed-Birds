@@ -12,7 +12,8 @@ public class Bird : MonoBehaviour
 
     private void Awake()
     {
-        _initialPosition = transform.position;        
+        _initialPosition = transform.position;
+        GetComponent<LineRenderer>().enabled = false;
     }
 
     private void Update()
@@ -25,7 +26,7 @@ public class Bird : MonoBehaviour
             _timeSittingAround += Time.deltaTime;
         }
 
-        if(Mathf.Abs(transform.position.y) > 10 || Mathf.Abs(transform.position.x) > 15 || _timeSittingAround > 3f)
+        if(Mathf.Abs(transform.position.y) > 20 || Mathf.Abs(transform.position.x) > 20 || _timeSittingAround > 3f)
         {
             string currentSceneName = SceneManager.GetActiveScene().name;
             SceneManager.LoadScene(currentSceneName);
