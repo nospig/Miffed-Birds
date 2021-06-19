@@ -4,7 +4,7 @@ using UnityEngine.SceneManagement;
 public class LevelController : MonoBehaviour
 {
     private static int _nextLevelIndex = 1;
-    private static int _numLevels = 3;
+    private static int _numLevels = 5;
     private Enemy[] _enemies;    
 
     private void OnEnable()

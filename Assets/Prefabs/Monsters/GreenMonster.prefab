@@ -12,8 +12,8 @@ GameObject:
   - component: {fileID: 4649874126319753623}
   - component: {fileID: 4649874126319753616}
   - component: {fileID: 4649874126319753617}
-  - component: {fileID: 4649874126319753618}
   - component: {fileID: 4649874126319753621}
+  - component: {fileID: 6276309941490737239}
   m_Layer: 0
   m_Name: GreenMonster
   m_TagString: Untagged
@@ -126,8 +126,21 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!60 &4649874126319753618
-PolygonCollider2D:
+--- !u!114 &4649874126319753621
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4649874126319753619}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 50816cd3354969a4aa9237e68210866a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _cloudParticlePrefab: {fileID: 2131085134860225410, guid: a655cb598f076d54e8e200b5939d58a6, type: 3}
+--- !u!61 &6276309941490737239
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -149,63 +162,6 @@ PolygonCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Points:
-    m_Paths:
-    - - {x: 1.3808149, y: -1.3907489}
-      - {x: 1.4602864, y: -1.1722026}
-      - {x: 1.4404185, y: 0.6357709}
-      - {x: 1.2814758, y: 0.874185}
-      - {x: 1.0033259, y: 1.0927312}
-      - {x: 0.8245154, y: 1.1324669}
-      - {x: 1.1424009, y: 1.5695595}
-      - {x: 1.6192291, y: 1.8675771}
-      - {x: 1.6987004, y: 1.9867841}
-      - {x: 1.6987004, y: 2.2450662}
-      - {x: 1.6192291, y: 2.364273}
-      - {x: 1.4602864, y: 2.364273}
-      - {x: 1.3212115, y: 2.3444052}
-      - {x: 1.0629295, y: 2.2053304}
-      - {x: 0.64570487, y: 1.6887665}
-      - {x: 0.3874229, y: 1.1324669}
-      - {x: -0.46689427, y: 1.1125991}
-      - {x: 0.009933921, y: 1.3708811}
-      - {x: 0.36755505, y: 1.4503524}
-      - {x: 0.4867621, y: 1.5496916}
-      - {x: 0.5463656, y: 1.8079735}
-      - {x: 0.4271586, y: 1.9271806}
-      - {x: 0.0496696, y: 1.9271806}
-      - {x: -0.12914097, y: 1.8874449}
-      - {x: -0.62583697, y: 1.5496916}
-      - {x: -1.0629295, y: 1.0728635}
-      - {x: -1.3013436, y: 0.93378854}
-      - {x: -1.5596255, y: 0.6159031}
-      - {x: -1.5596255, y: -1.1920705}
-      - {x: -1.8179075, y: -1.4900881}
-      - {x: -1.8179075, y: -1.6490308}
-      - {x: -1.7980397, y: -1.6887665}
-      - {x: -1.9801674, y: -2.3379602}
-      - {x: -1.5397577, y: -2.3109727}
-      - {x: -1.1883998, y: -2.3454843}
-      - {x: -0.24731082, y: -2.3611605}
-      - {x: -0.14900881, y: -2.3475587}
-      - {x: 0.04340589, y: -2.3553967}
-      - {x: 0.20549679, y: -2.3613825}
-      - {x: 0.38115966, y: -2.335529}
-      - {x: 0.4271586, y: -2.3245375}
-      - {x: 0.5861013, y: -2.3245375}
-      - {x: 1.3410792, y: -2.145727}
-      - {x: 1.4602864, y: -2.0066519}
-      - {x: 1.4205506, y: -1.7881057}
---- !u!114 &4649874126319753621
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4649874126319753619}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 50816cd3354969a4aa9237e68210866a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _cloudParticlePrefab: {fileID: 2131085134860225410, guid: a655cb598f076d54e8e200b5939d58a6, type: 3}
+  serializedVersion: 2
+  m_Size: {x: 3.84, y: 4.7}
+  m_EdgeRadius: 0
