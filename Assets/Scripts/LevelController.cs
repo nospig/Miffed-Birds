@@ -4,7 +4,7 @@ using UnityEngine.SceneManagement;
 public class LevelController : MonoBehaviour
 {
     private static int _nextLevelIndex = 1;
-    private static int _maxLevel = 2;
+    private static int _numLevels = 3;
     private Enemy[] _enemies;    
 
     private void OnEnable()
@@ -27,7 +27,7 @@ public class LevelController : MonoBehaviour
 
         _nextLevelIndex++;
 
-        if (_nextLevelIndex > _maxLevel)
+        if (_nextLevelIndex > _numLevels)
         {
             SceneManager.LoadScene("MainMenu");
             _nextLevelIndex = 1;
