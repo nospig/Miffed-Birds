@@ -414,6 +414,7 @@ MonoBehaviour:
   _launchPower: 250
   _stillResetTime: 2
   _outOfBounds: 20
+  _maxDragDistance: 5
 --- !u!58 &8807679150046697908
 CircleCollider2D:
   m_ObjectHideFlags: 0
