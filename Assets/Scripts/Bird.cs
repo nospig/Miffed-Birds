@@ -8,7 +8,8 @@ public class Bird : MonoBehaviour
     private float _timeSittingAround = 0f;
     
     [SerializeField] private float _launchPower = 500f;
-    
+    [SerializeField] private float _stillResetTime = 2f;
+    [SerializeField] private float _outOfBounds = 20f;
 
     private void Awake()
     {
@@ -26,7 +27,7 @@ public class Bird : MonoBehaviour
             _timeSittingAround += Time.deltaTime;
         }
 
-        if(Mathf.Abs(transform.position.y) > 20 || Mathf.Abs(transform.position.x) > 20 || _timeSittingAround > 3f)
+        if(Mathf.Abs(transform.position.y) > _outOfBounds || Mathf.Abs(transform.position.x) > _outOfBounds || _timeSittingAround > _stillResetTime)
         {
             string currentSceneName = SceneManager.GetActiveScene().name;
             SceneManager.LoadScene(currentSceneName);
